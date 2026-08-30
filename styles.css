@@ -187,7 +187,7 @@ footer strong{color:#bbb}
   }
 
   .hero-bg-word {
-    top: 135px;
+    top: 490px;
     left: 4%;
     font-size: 90px;
   }
@@ -217,10 +217,15 @@ footer strong{color:#bbb}
     max-width: 100%;
   }
 
-  h1 span {
-    font-size: .52em;
-    margin-top: 14px;
-  }
+h1 span {
+  display: block;
+  font-size: 0.52em;
+  line-height: 1.35;
+  margin-top: 14px;
+  color: #9b9d99;
+  opacity: 1;
+  visibility: visible;
+}
 
   .hero-description {
     max-width: 100%;
@@ -1126,5 +1131,21 @@ html{
 
   body:has(.nav.open) {
     overflow: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-copy h1 span {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    line-height: 1.5 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    position: relative !important;
+    z-index: 999 !important;
   }
 }
